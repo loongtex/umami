@@ -22,6 +22,7 @@
     "build-tracker": "rollup -c rollup.tracker.config.mjs",
     "build-db": "npm-run-all copy-db-files build-db-client",
     "build-lang": "npm-run-all format-lang compile-lang clean-lang download-country-names download-language-names",
+    "build-geo": "node scripts/build-geo.js",
     "build-db-schema": "prisma db pull",
     "build-db-client": "prisma generate",
     "update-tracker": "node scripts/update-tracker.js",
